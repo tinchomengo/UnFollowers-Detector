@@ -7,4 +7,5 @@ Accesing your instagram data requires the following steps (they can be done from
 Instagram > More > Your Activity > Download Your Information > HTML or JSON (the program supports both) > Send
 
 
+
 Note: In the last step before send, if you download your info from iOS Mobile, it doesn't require for you to choose the format and by default sends it as HTML (as far as I know).
