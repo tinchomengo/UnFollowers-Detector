@@ -40,3 +40,6 @@ elif os.path.splitext(followers_file)[1] and os.path.splitext(following_file)[1]
     [print("- " + x) for x in val]
 else:
     print("Error: You entered files in the wrong format :(", "\n")
+    
+    
+    
