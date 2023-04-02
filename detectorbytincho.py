@@ -6,9 +6,8 @@ import json
 import lxml
 
 val = []
-# Change the extension of the file to the one you have (either .html or .json)
+# Change the extension of the files to the one you have (either both .html or both .json)
 followers_file = ("followers.json")
-# Change the extension to the one you have (either .html or .json)
 following_file = ("following.json")
 print("\n", "Instagram Unfollowers you follow:", "\n")
 
