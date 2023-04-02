@@ -41,4 +41,3 @@ elif os.path.splitext(followers_file)[1] and os.path.splitext(following_file)[1]
 else:
     print("Error: You entered files in the wrong format :(", "\n")
     
-    
