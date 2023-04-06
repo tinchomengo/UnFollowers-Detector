@@ -1,3 +1,4 @@
+# Instagram UnFollowers-Detector
 
 Given the information you can download from Instagram, this program detects the unfollowers you follow.
 Accesing your instagram data requires the following steps (they can be done from Mobile or Web):
@@ -9,8 +10,3 @@ After receiving the zip file via mail, be sure to extract all files, and copy al
 Note 1: In the last step before send, if you download your info from iOS Mobile, it doesn't require for you to choose the format and by default sends it as HTML (as far as I know).
 
 Note 2: The file where the followers are stored might be named "followers_1". You must change its name to "followers"
-
-# Legal
-Disclaimer: This is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Instagram.
-
-Use it at your own risk!.
