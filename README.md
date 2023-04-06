@@ -13,7 +13,7 @@ After that, execute the _detectorbytincho.py_ file and then you will be able to 
 
 The 2 files that are needed inside the extracted file, are stored in the following folder:
 
-_Extracted Folder Name_ (e.g. johnsmith_20230401 )> _followers_and_following_
+_Extracted Folder Name (e.g. johnsmith_20230401)_> _followers_and_following_
 
 After opening the _followers_and_following_ folder the 2 files needed are "followers" and "following" (they might be .html or .json, depending on the format you requested)
 
