@@ -17,8 +17,8 @@ _Extracted Folder Name_ > _followers_and_following_
 
 After opening the _followers_and_following_ folder the 2 files needed are "followers" and "following" (they might be both .html or both .json, and as it was said the program supports both formats)
 
-_Note 1:_ It is crucial that both files are in the same format (either both .html or both .json)
+_Note 1: It is crucial that both files are in the same format (either both .html or both .json)._
 
-_Note 2:_ In the last step before send, if you download your info from iOS or Android, it doesn't require for you to choose the format and by default sends it as HTML (as far as I know).
+_Note 2: In the last step before send, if you download your info from iOS or Android, it doesn't require for you to choose the format and by default sends it as HTML (as far as I know)._
 
-_Note 3:_ The "followers" file might be named "followers_1", so you can select it from the file browser is it only matters its content, and not its name
+_Note 3: The "followers" file might be named "followers_1", so you can select it from the file browser is it only matters its content, and not its name._
