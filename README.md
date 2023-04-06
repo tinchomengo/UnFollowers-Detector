@@ -2,7 +2,7 @@
 
 # Instagram UnFollowers-Detector
 
-Given the information you can download from Instagram, this program detects the unfollowers you follow.
+Given the information you can download from Instagram, this program allows you to navigate to the required files, and detect the unfollowers you follow.
 Accesing your instagram data requires the following steps (they can be done from Mobile or Web):
 
 Instagram > More > Your Activity > Download Your Information > HTML or JSON (the program supports both) > Send
