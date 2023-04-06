@@ -1,11 +1,13 @@
 # Created by: https://www.linkedin.com/in/martinmengo/ (Martin Mengo)
-from modulo import *
+from modulo2 import *
 from bs4 import BeautifulSoup
 import re
+import sys
 import os
 import json
 import lxml
 import subprocess
+
 
 val = []
 unfollowers = ""
@@ -21,8 +23,6 @@ def on_files_selected(file1, file2):
 if __name__ == '__main__':
     app = MyApp(on_files_selected)
     app.run()
-
-my_layout = MyGridLayout()
 
 f1.replace("/", "\\")
 f2.replace("/", "\\")
@@ -65,4 +65,5 @@ try:
 except:
     unfollowers = "Error :("
 
-subprocess.run(["python", "lista.py", unfollowers])
+working_directory = os.path.dirname(os.path.abspath(__file__))
+subprocess.run(["python", "lista.py", unfollowers], cwd=working_directory)
