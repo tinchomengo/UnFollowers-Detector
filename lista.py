@@ -20,6 +20,7 @@ class ListaApp:
         self.text.insert("1.0", self.output_string)
 
     def run(self):
+        # Run the app
         self.window.mainloop()
 
 
