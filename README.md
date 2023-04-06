@@ -1,4 +1,3 @@
-![readme_image](https://user-images.githubusercontent.com/64234011/229381318-f205c248-bfcc-4fbd-80d1-6b9ca6fcf7db.png)
 
 Given the information you can download from Instagram, this program detects the unfollowers you follow.
 Accesing your instagram data requires the following steps (they can be done from Mobile or Web):
