@@ -11,6 +11,10 @@ After receiving the zip file via mail, be sure to extract all files in any folde
 
 After that, execute the _detectorbytincho.py_ file and then you will be able to navigate the folder where you stored the extracted zip file
 
-Note 1: In the last step before send, if you download your info from iOS Mobile, it doesn't require for you to choose the format and by default sends it as HTML (as far as I know).
+The 2 files that are needed inside the extracted file, are stored in the following path:
 
-Note 2: The file where the followers are stored might be named "followers_1". You must change its name to "followers"
+_Extracted Folder Name_ > followers_and_following
+
+_Note 1:_ In the last step before send, if you download your info from iOS or Android, it doesn't require for you to choose the format and by default sends it as HTML (as far as I know).
+
+_Note 2:_ The "followers" file might be named "followers_1", so you can select it from the file browser is it only matters its content, and not its name
