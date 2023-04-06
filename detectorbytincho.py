@@ -1,22 +1,42 @@
 # Created by: https://www.linkedin.com/in/martinmengo/ (Martin Mengo)
+from modulo import *
 from bs4 import BeautifulSoup
 import re
 import os
 import json
 import lxml
+import subprocess
 
 val = []
-# Change the extension of the files to the one you have (either both .html or both .json)
-followers_file = ("followers.json")
-following_file = ("following.json")
-print("\n", "Instagram Unfollowers you follow:", "\n")
+unfollowers = ""
+
+
+def on_files_selected(file1, file2):
+    global f1
+    global f2
+    f1 = file1
+    f2 = file2
+
+
+if __name__ == '__main__':
+    app = MyApp(on_files_selected)
+    app.run()
+
+my_layout = MyGridLayout()
+
+for x in f1:
+    if x == "/":
+        x.replace("/", "\\")
+for x in f2:
+    if x == "/":
+        x.replace("/", "\\")
 
 try:
-    if (os.path.splitext(followers_file)[1] == ".json") and (os.path.splitext(following_file)[1] == ".json"):
+    if (os.path.splitext(f1)[1] == ".json") and (os.path.splitext(f2)[1] == ".json"):
 
-        with open(followers_file, 'r') as f1:
+        with open(f1, 'r') as f1:
             data1 = json.load(f1)
-        with open(following_file, 'r') as f2:
+        with open(f2, 'r') as f2:
             data2 = json.load(f2)
 
         for x in range(0, len(data2["relationships_following"])):
@@ -25,13 +45,14 @@ try:
         for obj in range(0, len(data1)):
             if data1[obj]['string_list_data'][0]['value'] in val:
                 val.remove(data1[obj]['string_list_data'][0]['value'])
-        [print("- " + x) for x in val]
-    elif (os.path.splitext(followers_file)[1] == ".html") and (os.path.splitext(following_file)[1] == ".html"):
+        for x in val:
+            unfollowers += (x + "\n")
+    elif (os.path.splitext(f1)[1] == ".html") and (os.path.splitext(f2)[1] == ".html"):
 
-        with open(followers_file) as html_file:
+        with open(f1) as html_file:
             soup1 = (BeautifulSoup(html_file, 'lxml')).prettify()
             f1 = re.findall(r'\b.com/\w+\.?\w*', soup1, re.I)
-        with open(following_file) as html_file:
+        with open(f2) as html_file:
             soup2 = (BeautifulSoup(html_file, 'lxml')).prettify()
             f2 = re.findall(r'\b.com/\w+\.?\w*', soup2, re.I)
 
@@ -40,9 +61,12 @@ try:
         for i in f1:
             if i[5:] in val:
                 val.remove(i[5:])
-        [print("- " + x) for x in val]
+        for x in val:
+            unfollowers += (x + "\n")
     else:
 
-        print("Error: You entered files in the wrong format :(", "\n")
+        unfollowers = "Error: You entered the files in the wrong format :("
 except:
-    print("Error: Either your files aren't in the main folder, or you didn't change its extension on this code :(", "\n")
+    unfollowers = "Error :("
+
+subprocess.run(["python", "lista.py", unfollowers])
