@@ -15,7 +15,7 @@ The 2 files that are needed inside the extracted file, are stored in the followi
 
 _Extracted Folder Name_ > _followers_and_following_
 
-After opening the _followers_and_following_ folder the 2 files needed are "followers" and "following" (they might be both .html or both .json, and as it was said the program supports both formats)
+After opening the _followers_and_following_ folder the 2 files needed are "followers" and "following" (they might be .html or .json, depending on the format you requested)
 
 * _Note 1: It is crucial that both files are in the same format (either both .html or both .json)._
 
