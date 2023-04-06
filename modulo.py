@@ -53,7 +53,6 @@ class MyGridLayout(GridLayout):
         if file_path:
             self.file1GUI = file_path
             self.file1_label.text = self.file1GUI
-            print(f'Selected file 1: {self.file1GUI}')
 
     def browse_file2(self, instance):
         root = tk.Tk()
@@ -62,12 +61,10 @@ class MyGridLayout(GridLayout):
         if file_path:
             self.file2GUI = file_path
             self.file2_label.text = self.file2GUI
-            print(f'Selected file 2: {self.file2GUI}')
 
     def submit_button(self, instance):
         try:
             if self.file1GUI and self.file2GUI:
-                print(f'Selected files: {self.file1GUI}, {self.file2GUI}')
                 App.get_running_app().stop()
         except:
             pass

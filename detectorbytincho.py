@@ -24,12 +24,8 @@ if __name__ == '__main__':
 
 my_layout = MyGridLayout()
 
-for x in f1:
-    if x == "/":
-        x.replace("/", "\\")
-for x in f2:
-    if x == "/":
-        x.replace("/", "\\")
+f1.replace("/", "\\")
+f2.replace("/", "\\")
 
 try:
     if (os.path.splitext(f1)[1] == ".json") and (os.path.splitext(f2)[1] == ".json"):
