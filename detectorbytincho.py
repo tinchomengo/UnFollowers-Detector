@@ -24,9 +24,6 @@ if __name__ == '__main__':
     app = MyApp(on_files_selected)
     app.run()
 
-f1.replace("/", "\\")
-f2.replace("/", "\\")
-
 try:
     if (os.path.splitext(f1)[1] == ".json") and (os.path.splitext(f2)[1] == ".json"):
 
