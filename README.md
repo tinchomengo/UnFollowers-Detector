@@ -9,9 +9,9 @@ Instagram > More > Your Activity > Download Your Information > HTML or JSON (the
 
 After receiving the zip file via mail, be sure to extract all files in any folder
 
-After that, execute the _detectorbytincho.py_ file and then you will be able to navigate the folder where you stored the extracted zip file
+After that, execute the _detectorbytincho.exe_ file and then you will be able to navigate the folder where you stored the extracted zip files
 
-The 2 files that are needed inside the extracted file, are stored in the following folder:
+The 2 files that are needed inside the extracted zip, are stored in the following folder:
 
 _Extracted Folder Name (e.g. johnsmith_20230401)_ > _followers_and_following_
 
